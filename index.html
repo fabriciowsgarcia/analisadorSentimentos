@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Sentimentos com IA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Analisador de Sentimentos 😃😐😠</h1>
+        <p>Escreva uma frase e a IA dirá se o sentimento é positivo, negativo ou neutro.</p>
+        
+        <div class="input-group">
+            <label for="api-key-input">Sua Chave da API do Google AI</label>
+            <input type="password" id="api-key-input" placeholder="Cole sua chave aqui">
+        </div>
+
+        <div class="input-group">
+            <label for="frase-input">Digite a frase para análise</label>
+            <textarea id="frase-input" rows="4" placeholder="Ex: Eu adoro dias de sol!"></textarea>
+        </div>
+
+        <button id="analisar-btn">Analisar Sentimento</button>
+
+        <div id="resultado">
+            <p>O sentimento da frase aparecerá aqui...</p>
+        </div>
+    </main>
+</body>
+</html>
