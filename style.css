@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* ... (estilos de h1, p, input-group, etc. podem ser os mesmos do projeto anterior) ... */
+h1 { color: #1e1e1e; margin-bottom: 0.5rem; }
+p { color: #666; margin-bottom: 2rem; }
+.input-group { text-align: left; margin-bottom: 1.5rem; }
+.input-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: #555; }
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #6f42c1; /* Roxo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover { background-color: #5a3d9a; }
+button:disabled { background-color: #aaa; cursor: not-allowed; }
+/* Fim dos estilos genéricos */
+
+#resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center; /* Centraliza o emoji e o texto */
+    font-size: 1.5rem; /* Deixa o resultado maior */
+    font-weight: bold;
+    min-height: 60px;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* CLASSES DE SENTIMENTO PARA O FEEDBACK VISUAL */
+.positivo {
+    background-color: #e9f7ef;
+    border-color: #a7d7c5;
+    color: #1d7a46;
+}
+.negativo {
+    background-color: #fdecea;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+.neutro {
+    background-color: #f8f9fa;
+    border-color: #d6d8db;
+    color: #383d41;
+}
